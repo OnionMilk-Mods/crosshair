@@ -14,7 +14,7 @@ namespace OnionMilk_crosshair
 	public class Plugin : BaseUnityPlugin
 	{
 		private static Plugin instance;
-		private readonly Harmony _harmony = new Harmony("OnionMilk.Fourth");
+		private readonly Harmony _harmony = new Harmony("OnionMilk.Crosshair");
 
 		public static ConfigEntry<bool> cfgEnabled;
 		public static ConfigEntry<string> cfgImage;
@@ -204,7 +204,7 @@ namespace HealthMetrics.Patches
 				return;
 
 			var canvas = __instance.versionNumberText.GetComponentInParent<Canvas>();
-			OnionMilk_crosshair.Plugin.ListChildren(canvas.transform);
+			//OnionMilk_crosshair.Plugin.ListChildren(canvas.transform);
 
 			GameObject go = new GameObject("CrosshairSettings");
 			var rct = go.AddComponent<RectTransform>();
